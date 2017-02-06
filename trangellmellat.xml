@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="digicom_pay" method="upgrade">
+	<name>TrangellMellat Payment - DigiCom Pay Plugin</name>
+	<title>TrangellMellat</title>
+	<author>Trangell</author>
+	<creationDate>Feb 2016</creationDate>
+	<copyright>Copyright 2016 Trangell Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>info@trangell.com</authorEmail>
+	<authorUrl>http://trangell.com</authorUrl>
+	<version>0.0.1</version>
+	<description> پلاگین پرداخت ملت برای دی جی کام</description>
+
+	<files>
+		<filename plugin="trangellmellat">trangellmellat.php</filename>
+		<folder>trangellmellat</folder>
+	</files>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="melatuser" type="text" label="نام کاربری درگاه" default="" required="" />
+				<field name="melatpass" type="text" label="پسورد درگاه" default="" required="" />
+				<field name="melatterminalId" type="text" label="شناسه ترمینال" default="" required=""/>
+				<field name="plugin_name" type="text" default="TrangellMellat Payment" label="TrangellMellat" description="" />
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>
